@@ -1,5 +1,8 @@
 import type { Preview } from '@storybook/nextjs-vite'
 
+// @ts-expect-error CSS side-effect imports are handled by the bundler.
+import '../src/styles/global.css';
+
 const preview: Preview = {
   parameters: {
     controls: {

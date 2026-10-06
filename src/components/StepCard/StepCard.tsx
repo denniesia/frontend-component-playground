@@ -14,6 +14,7 @@ const StepCard = (props: StepCardProps) => {
     return (
         <div className={styles.base()}>
             <div className={styles.row()}>
+                <div className={styles.marker()}>{/* marker */}</div>
                 <div className={styles.content()}>
                     <h3 className={styles.title()}>{title}</h3>
                     <div className={styles.text()}>{description}</div>
