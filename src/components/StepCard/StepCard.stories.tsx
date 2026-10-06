@@ -41,7 +41,7 @@ export const FirstStep: Story = {
 export const SecondStep: Story = {
   args: {
     step: 2,
-    title: 'Message the seller' ,
+    title: 'Message the seller',
     description:
       'Agree on a price and a place to meet. ReDiCycle never touches the payment — that is between the two of you.',
   },
