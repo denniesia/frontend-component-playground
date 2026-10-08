@@ -8,13 +8,13 @@ import type { StepCardProps } from './StepCard.types';
  * title and description.
  */
 const StepCard = (props: StepCardProps) => {
-    const { title, description } = props;
+    const { title, description, step} = props;
     const styles = stepCardStyles();
 
     return (
         <div className={styles.base()}>
             <div className={styles.row()}>
-                <div className={styles.marker()}>{/* marker */}</div>
+                <div className={styles.marker()}>{step}</div>
                 <div className={styles.content()}>
                     <h3 className={styles.title()}>{title}</h3>
                     <div className={styles.text()}>{description}</div>
